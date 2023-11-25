@@ -38,6 +38,9 @@ function App() {
               <Route path="/PersonalInfo" element={<PersonalInfo/>}/>
               <Route path="/Success" element={<Successful/>}/>
             </Routes>
+            <footer>
+              
+            </footer>
     </div>
   );
 }

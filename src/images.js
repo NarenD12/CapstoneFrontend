@@ -6,7 +6,6 @@ const images = [
 		id: 1,
 		src: "https://static4.abbyy.com/abbyycommedia/28766/ocrsdk-visual-default.jpg",
 		alt: "three",
-        
 	},
 	{
 		id: 2,

@@ -15,12 +15,13 @@ const ImageSlider = ({ images }) => {
             lazyLoad: true,
             autoplay: true,
             autoplaySpeed: 2000,
+            // centerMode: true,
+            // centerPadding: '60px',
+            variableWidth: false,
+            adaptiveHeight: false,
         };
         return (
             <div className="image-slider-container">
-            <div className="tag">
-                {/* <h1> Wallet Image Gallery</h1> */}
-            </div>
             <div className="imgslider">
                 <Slider {...settings}>
                     {images.map((item) => (

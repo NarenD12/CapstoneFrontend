@@ -2,54 +2,53 @@ import React from "react";
 import { NavLink } from 'react-router-dom';
 //import useScripts from "./useScripts";
 import Dropdown from 'react-bootstrap/Dropdown';
-
+import "./Navbar.css";
 const Navbar = props => {
     // useScripts("https://cdn.tailwindcss.com")
 
     return (
-        <nav class="flex px-10 border-b md:shadow-lg items-center relative ">
+        <nav class="bg-green-50 flex px-10 border-b md:shadow-lg items-center relative">
             <div class="text-lg font-bold md:py-0 py-4">
-                <img src="/images/image123.png" alt="Infinite" width="80" height="50" />
+            <a href="/home">
+                <img src="/images/image123.png" alt="Infinite" width="50" height="30" />
+            </a>
             </div>
             <ul class="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0">
                 <NavLink to={"/home"}>
                     <li>
-                        <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-50">
+                        <a href="#" class="flex md:inline-flex p-4 items-center text-green-600 hover:bg-blue-100">
                             <span>Home</span>
                         </a>
                     </li>
                 </NavLink>
                 <NavLink to={"/Stocks"}>
                     <li>
-                        <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-50">
+                        <a href="#" class="flex md:inline-flex p-4 items-center text-green-600 hover:bg-blue-100">
                             <span>Stocks</span>
                         </a>
                     </li>
                 </NavLink>
                 <NavLink to={"/Mutual"}>
                     <li>
-                        <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-50">
+                        <a href="#" class="flex md:inline-flex p-4 items-center text-green-600 hover:bg-blue-100">
                             <span>Mutual Funds</span>
                         </a>
                     </li>
                 </NavLink>
                 <NavLink to={"/About"}>
                     <li>
-                        <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-50">
+                        <a href="#" class="flex md:inline-flex p-4 items-center text-green-600 hover:bg-blue-100">
                             <span>About</span>
                         </a>
                     </li>
                 </NavLink>
                 <NavLink to={"/Contact"}>
                     <li>
-                        <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-50">
+                        <a href="#" class="flex md:inline-flex p-4 items-center text-green-600 hover:bg-blue-100">
                             <span>Contact Us</span>
                         </a>
                     </li>
                 </NavLink>
-
-               
-
                 <li>
                     <div href="#" class="flex md:inline-flex p-4 items-center ">
                         <Dropdown>

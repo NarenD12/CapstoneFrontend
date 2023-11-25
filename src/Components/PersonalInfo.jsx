@@ -17,9 +17,12 @@ function PersonalInfo(){
         });
     };
     return (
-        <div>
-            <h1 style={{textAlign:"center"}}>Personal Details</h1>
-            <table border="1" style={{marginLeft:"auto",marginRight:"auto"}}>
+        <div >
+             <h1 class="my-6 text-4xl font-bold text-center leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+                         <span class="block w-full py-22 text-transparent  bg-clip-text leading-12 bg-gradient-to-r from-blue-600 to-green-400 lg:inline">Personal Details</span> <span></span>
+                    </h1>
+            {/* <h1 style={{textAlign:"center"}}>Personal Details</h1> */}
+            <table class="w-50 table table-hover table-bordered border-primary table-sm text-center"  cellPadding="8px" style={{marginLeft:"auto",marginRight:"auto"}}>
                 <thead>
                     {
                         datas.map(
@@ -39,15 +42,16 @@ function PersonalInfo(){
                 </thead>
                 <tbody>
                     <tr><td>
-                  <Link
-                    className="btn btn-outline-primary mx-2"
+                  
+                  </td></tr>
+                </tbody>
+            </table >
+            <Link
+                    className="btn btn-outline-primary mx-2 "
                     to={`/editproduct/${datas.userid}`}
                   >
                     Update
                   </Link>
-                  </td></tr>
-                </tbody>
-            </table >
         </div >
     );
 }

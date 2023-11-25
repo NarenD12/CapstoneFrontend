@@ -39,15 +39,18 @@ function DepositWithdraw() {
         <div>
             <div class="container">
                 <div class="row">
-                    <h2>Bill Payment</h2>
+                <h1 class="mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-4xl md:tracking-tight">
+                        <span class="block w-full py-22 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-blue-600 to-green-400 lg:inline">Bill Payment</span> <span></span>
+                    </h1>
+                    {/* <h2>Bill Payment</h2> */}
                     <hr />
                 </div>
 
                 <div class="row">
                     <div class="col-sm-6" style={{float:"left"}}>
                         <form>
-                            <div class="form-group">
-                                <label> Account Id</label>
+                            <div class="form-group my-4">
+                                <label className="font-bold pl-2">Account Id</label>
                                 <input type="number" class="form-control" name="accountid" id="accountid" placeholder="Enter Account Id"
                                     value={accountid}
                                     onChange={(event) => {
@@ -55,8 +58,8 @@ function DepositWithdraw() {
                                     }}
                                 />
                             </div>
-                            <div>
-                            <label> Type of Transaction &nbsp; &nbsp; &nbsp;</label>
+                            <div className="my-2">
+                            <label className="font-bold pl-2"> Type of Transaction &nbsp; &nbsp; &nbsp;</label>
                                              <select id="sel"
                                                 name="Select the Bill Type"
                                                 value={typeofTrans}
@@ -70,8 +73,8 @@ function DepositWithdraw() {
                                                  {/* {/* Add more options as needed */}
                                             </select> 
                             </div>
-                    <div class="form-group">
-                        <label>Amount</label>
+                    <div class="form-group my-4">
+                        <label className="font-bold pl-2">Amount</label>
                         <input type="number" class="form-control" id="amount" placeholder="Enter Amount"
 
                             value={amount}

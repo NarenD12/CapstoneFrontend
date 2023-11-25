@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 //import Login from "./Login";
-//import "./Register.css";
+import "./Register.css";
 
 function Register() {
 
@@ -43,13 +43,16 @@ function Register() {
         }
     }
     return (
-        <div>
-            <div class="container mt-4" >
+        <div className="Back">
+            <div class="container">
                 {/* <div class="card"> */}
-                    <h1>User Registation</h1>
+                <h1 class="mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+                        <span class="block w-full py-22 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-blue-600 to-green-400 lg:inline">Registration</span> <span></span>
+                    </h1>
                     <hr></hr>
                     <form onSubmit="/home">
-                        <div class="form-group">
+                        <div class="abc">
+                        <div class="form-group-left">
                             <label>First Name</label>
                             <input type="text" class="form-control" id="firstname" placeholder="Enter First Name"
                                 value={firstname}
@@ -58,16 +61,17 @@ function Register() {
                                 }}
                             />
                         </div>
-                        <div class="form-group">
+                        <div class="form-group-right">
                             <label>Last Name</label>
-                            <input type="lastname" class="form-control" id="lastname" placeholder="Enter Last Name"
+                            <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name"
                                 value={lastname}
                                 onChange={(event) => {
                                     setlastname(event.target.value);
                                 }}
                             />
                         </div>
-                        <div class="form-group">
+                        
+                        <div class="form-group-left">
                             <label>Email Id</label>
                             <input type="email" class="form-control" id="email" placeholder="Enter Email"
                                 value={email}
@@ -76,7 +80,7 @@ function Register() {
                                 }}
                             />
                         </div>
-                        <div class="form-group">
+                        <div class="form-group-right">
                             <label>Password</label>
                             <input type="password" class="form-control" id="password" placeholder="Enter Password"
                                 value={password}
@@ -85,7 +89,7 @@ function Register() {
                                 }}
                             />
                         </div>
-                        <div class="form-group">
+                        <div class="form-group-left">
                             <label>Date of Birth</label>
                             <input type="Date" class="form-control" id="dob" placeholder="Enter dob"
                                 value={dob}
@@ -94,7 +98,7 @@ function Register() {
                                 }}
                             />
                         </div>
-                        <div class="form-group">
+                        <div class="form-group-right">
                             <label>Mobile Number</label>
                             <input type="text" class="form-control" id="mobileno" placeholder="Enter Mobile Number"
                                 value={mobileno}
@@ -103,7 +107,7 @@ function Register() {
                                 }}
                             />
                         </div>
-                        <div class="form-group">
+                        <div class="form-group-left">
                             <label>Address</label>
                             <input type="text" class="form-control" id="address" placeholder="Enter address"
                                 value={address}
@@ -112,23 +116,24 @@ function Register() {
                                 }}
                             />
                         </div>
-                        <div class="form-group">
+                        <div class="form-group-right">
                             <label>State</label>
-                            <input type="email" class="form-control" id="state" placeholder="Enter state"
+                            <input type="text" class="form-control" id="state" placeholder="Enter state"
                                 value={state}
                                 onChange={(event) => {
                                     setstate(event.target.value);
                                 }}
                             />
                         </div>
-                        <div class="form-group">
+                        <div class="form-group-left">
                             <label>Pincode</label>
-                            <input type="text" class="form-control" id="pincode" placeholder="Enter Pincode"
+                            <input type="number" class="form-control" id="pincode" placeholder="Enter Pincode"
                                 value={pincode}
                                 onChange={(event) => {
                                     setpincode(event.target.value);
                                 }}
                             />
+                        </div>
                         </div>
                         <button type="submit" class="btn btn-primary mt-4" onClick={save} >Save</button>    <button type="button" class="btn btn-primary mt-4" onClick={loginNavi}>Go to Login</button>
                    

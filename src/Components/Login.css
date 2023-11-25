@@ -1,0 +1,19 @@
+.form-group-login {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .btn-primary {
+    width: 50%;
+    padding: 7px;
+
+  }
+  #login{
+    align-self: center;
+  }
+
+  .BackLog{
+    background-size: cover;
+    background-image:url("https://img.freepik.com/premium-photo/top-view-desk-concept-with-copy-space_23-2148459757.jpg");
+   }

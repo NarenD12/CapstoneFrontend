@@ -199,10 +199,10 @@ function MutualFundPage(){
 <section class="pt-2 bg-skyblue">
             <div class="px-12 mx-auto max-w-7xl">
                 <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
-                    <h1 class="mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-                        <span></span><br /> <span class="block w-full py-22 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-blue-400 to-blue-400 lg:inline">Mutual Funds</span> <span></span>
+                    <h1 class="my-6 text-4xl font-bold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+                      <span class="block w-full py-22 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-blue-600 to-green-400 lg:inline">Mutual Funds</span> <span></span>
                     </h1>
-                    <p class="px-0 mb-8 text-lg text-gray-600 md:text-xl lg:px-24">
+                    <p class="px-0 mb-8 text-lg text-green-300 md:text-xl lg:px-24">
                     Mutual funds with superior performance records often falter
                     </p>
  

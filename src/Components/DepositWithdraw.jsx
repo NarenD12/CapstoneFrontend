@@ -63,15 +63,18 @@ function DepositWithdraw() {
         <div>
             <div class="container">
                 <div class="row">
-                    <h2>Deposit or Withdraw</h2>
+                    <h1 class="mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-4xl md:tracking-tight">
+                        <span class="block w-full py-22 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-blue-600 to-green-400 lg:inline">Deposit or Withdraw</span> <span></span>
+                    </h1>
+                    {/* <h2>Deposit or Withdraw</h2> */}
                     <hr />
                 </div>
 
                 <div class="row">
                     <div class="col-sm-6" style={{float:"left"}}>
                         <form>
-                            <div class="form-group">
-                                <label> Account Id</label>
+                            <div class="form-group my-3">
+                                <label className="font-bold pl-2"> Account Id</label>
                                 <input type="number" class="form-control" name="accountid" id="accountid" placeholder="Enter Account Id"
                                     value={accountid}
                                     onChange={(event) => {
@@ -79,8 +82,8 @@ function DepositWithdraw() {
                                     }}
                                 />
                             </div>
-                            <div class="form-group">
-                                <label>Type of Transaction</label>
+                            <div class="form-group my-3 pl-2">
+                                <label class="pr-10 font-bold">Type of Transaction</label>
                              {/* <input type="number" class="form-control" id="lastName" placeholder="Enter Password"
 
                                     value={typeofTrans}
@@ -99,8 +102,8 @@ function DepositWithdraw() {
                                             <option value="Withdraw">Withdraw</option>
                                         </select>
                     </div>
-                    <div class="form-group">
-                        <label>Amount</label>
+                    <div class="form-group my-3">
+                        <label className="font-bold pl-2">Amount</label>
                         <input type="number" class="form-control" id="amount" placeholder="Enter Amount"
 
                             value={amount}

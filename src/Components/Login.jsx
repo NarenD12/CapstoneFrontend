@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import Captcha from "./Captcha";
+import "./Login.css";
 //import { useNavigate } from "react-router-dom";
 function Login() {
 
@@ -58,10 +59,12 @@ function Login() {
         }
     }
     return (
-        <div>
-            <div class="container">
+        <div className="BackLog">
+            <div class="container" >
                 <div class="row">
-                    <h2>Login</h2>
+                <h1 class="mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+                        <span class="block w-full py-22 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-blue-600 to-green-400 lg:inline">Login</span> <span></span>
+                    </h1>
                     <hr />
                 </div>
 
@@ -69,10 +72,10 @@ function Login() {
                     <div class="col-sm-6">
 
                         <form>
-                            <div class="form-group">
+                            <div class="form-group-login">
                                 <label>Email</label>
                                 <input type="email" class="form-control" name="emailId" id="emailId" placeholder="Enter Email"
-
+                                    
                                     value={email}
                                     onChange={(event) => {
                                         setemailId(event.target.value);
@@ -82,7 +85,7 @@ function Login() {
 
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group-login">
                                 <label>Password</label>
                                 <input type="Password" class="form-control" id="lastName" placeholder="Enter Password"
 
@@ -94,11 +97,11 @@ function Login() {
                                 />
                             </div>
                             <br></br>
-                            <button type="submit" class="btn btn-primary" onClick={login} >Login</button>
+                            <button type="submit" class="btn btn-primary" id="login" onClick={login} >Login</button>
                         </form>
                         <br></br>
                         <Captcha/>
-                        <a href="/Register" style={{color:"#41FF59"}}>Not Member? Register.</a>
+                        <a href="/Register" style={{color:"blue"}}>Not Member? Register.</a>
                     </div>
                 </div>
             </div>
