@@ -8,7 +8,7 @@ const Navbar = props => {
 
     return (
         <nav class="bg-green-50 flex px-10 border-b md:shadow-lg items-center relative">
-            <div class="text-lg font-bold md:py-0 py-4">
+            <div class="text-lg md:py-0  ">
             <a href="/home">
                 <img src="/images/image123.png" alt="Infinite" width="50" height="30" />
             </a>
@@ -51,11 +51,11 @@ const Navbar = props => {
                 </NavLink>
                 <li>
                     <div href="#" class="flex md:inline-flex p-4 items-center ">
-                        <Dropdown>
-                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                        <Dropdown >
+                            <Dropdown.Toggle  variant="success" id="dropdown-basic">
                                 Profile
                             </Dropdown.Toggle>
-                            <Dropdown.Menu>
+                            <Dropdown.Menu >
                                 <Dropdown.Item href="/PersonalInfo">Personal Info</Dropdown.Item>
                                 {/* <Dropdown.Item href="/Close">Close Account</Dropdown.Item> */}
                                 <Dropdown.Item href="/Register">Log Out</Dropdown.Item>

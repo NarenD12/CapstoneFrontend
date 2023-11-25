@@ -63,6 +63,7 @@ import {
                 helperText={valid && "Invalid Captcha"}
               />
               <Button
+                className="w-50 self-center	m-3"
                 variant="contained"
                 color="success"
                 type="submit"

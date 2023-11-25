@@ -17,7 +17,7 @@ function PersonalInfo(){
         });
     };
     return (
-        <div >
+        <div className="text-center" >
              <h1 class="my-6 text-4xl font-bold text-center leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
                          <span class="block w-full py-22 text-transparent  bg-clip-text leading-12 bg-gradient-to-r from-blue-600 to-green-400 lg:inline">Personal Details</span> <span></span>
                     </h1>
@@ -47,7 +47,7 @@ function PersonalInfo(){
                 </tbody>
             </table >
             <Link
-                    className="btn btn-outline-primary mx-2 "
+                    className="btn btn-outline-primary  mx-2 "
                     to={`/editproduct/${datas.userid}`}
                   >
                     Update

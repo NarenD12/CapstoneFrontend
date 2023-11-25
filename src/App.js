@@ -18,7 +18,7 @@ import Successful from "./Components/Successful";
 
 function App() {
   return (
-    <div>
+    <div style={{backgroundColor:"#cfe3ea"}}>
         <Navbar/>
             <Routes>
               <Route path="/home" element= { <Home/>} />
@@ -38,9 +38,10 @@ function App() {
               <Route path="/PersonalInfo" element={<PersonalInfo/>}/>
               <Route path="/Success" element={<Successful/>}/>
             </Routes>
-            <footer>
-              
-            </footer>
+            {/* <footer className="bg-green-100 text-green-600">
+              Hello guys
+            </footer> */}
+          
     </div>
   );
 }

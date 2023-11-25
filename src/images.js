@@ -19,13 +19,13 @@ const images = [
 	},
     {
 		id: 4,
-		src: "https://www.perfecto.io/sites/default/files/image/2020-07/social-blog-banking-app-test-considerations.jpg" ,
+		src: "https://cdn.create.vista.com/api/media/small/393408436/stock-vector-money-transfer-phone-online-payment-mobile-hand-holding-smartphone-transaction" ,
 		alt: "Image 2 ",
 
 	},
     {
 		id: 5,
-		src: "https://img.etimg.com/thumb/width-640,height-480,imgsize-41563,resizemode-75,msid-84727815/markets/bonds/is-investing-in-a-fund-of-funds-better-than-investing-in-a-mutual-fund.jpg",
+		src: "https://img.freepik.com/premium-vector/mobile-money-transactions-concept-internet-banking-service-vector-payment-electronic-app-buy-online-smart-connection-illustration_461812-1221.jpg",
 		alt: "Image 2 ",
 	},
 	

@@ -76,7 +76,7 @@ function Contact() {
                         </div>
                     </div>
 
-                    <div class="mt-8 lg:w-1/2 lg:mx-6">
+                    <div class="mt-8 lg:w-1/2 lg:mx-6 drop-shadow-2xl">
                         <div
                             class="w-full px-8 py-10 mx-auto overflow-hidden bg-blue-100 rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
                             <h1 class="text-lg font-medium text-gray-700">What do you want to ask</h1>

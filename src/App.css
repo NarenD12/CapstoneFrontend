@@ -38,11 +38,14 @@
 }
 
 body {
+  color: #cfe3ea;
   /* background-image: url('https://c4.wallpaperflare.com/wallpaper/113/848/51/surface-stains-light-texture-wallpaper-thumb.jpg');  */  
-  background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+  /* background-image:url("https://img.freepik.com/premium-photo/top-view-desk-concept-with-copy-space_23-2148459757.jpg");
+  background-size: cover; */
+	/* background-position: center;
+	background-repeat: no-repeat; */
 	margin: 0;
+  /*background-attachment: fixed; */
 }
 
 .tag {

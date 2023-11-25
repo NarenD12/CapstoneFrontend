@@ -67,7 +67,7 @@ function CardDetails() {
   }
 
   return (
-    <div className="App">
+    <div className="">
       <Cards
         number={number}
         name={name}
@@ -76,11 +76,12 @@ function CardDetails() {
         focused={focus}
       />
       <br></br>
-      <form style={{marginLeft:"150px"}}>
+      <div class="w-100">
+      <form class="items-center">
         <input
           type="tel"
           name="number"
-          placeholder="card Number"
+          placeholder="Card Number"
           value={number}
           onChange={handleNumberChange}
           onFocus={(e) => setFocus(e.target.inputNumber)}
@@ -120,12 +121,11 @@ function CardDetails() {
         <br></br>
 
         <button type="submit"
-          className="btn"
           onClick={save}
-          class="btn btn-primary" 
-          style={{width:"50%",marginLeft:"210px",marginBottom:"50px"}}
-        >submit</button>
+          class="btn btn-primary w-5" 
+        >Pay</button>
       </form>
+      </div>
     </div>
   );
 }
