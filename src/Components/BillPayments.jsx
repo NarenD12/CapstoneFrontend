@@ -37,6 +37,7 @@ function DepositWithdraw() {
     return (
       
         <div>
+            <Navbar/>
             <div class="container">
                 <div class="row">
                 <h1 class="mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-4xl md:tracking-tight">

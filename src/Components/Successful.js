@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 //import Service from "./Service";
 import axios from "axios";
+import Navbar from "./NavBar";
 function Successful() {
 
     const [table, setComponent] = useState([])
@@ -15,37 +16,38 @@ function Successful() {
             console.log(response.data);
         });
     }
-    return(
+    return (
         <>
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "50vh" }}>
-        <img src="Images/success.png" alt="Centered Image" />
-      </div>
-<div>
-{/* <h1>Table</h1> */}
-<table border="0.01" align="center">
-    {/* <thead>
+        <Navbar/>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "50vh" }}>
+                <img src="Images/success.png" alt="Centered Image" />
+            </div>
+            <div>
+                {/* <h1>Table</h1> */}
+                <table border="0.01" align="center">
+                    {/* <thead>
         <tr>
             <td>Balance:</td>
         </tr>
     </thead> */}
-    <tbody>
-        {
-            table.map(
-                table =>
-                    <tr key={table.accountid} style={{fontSize:"30px", fontFamily:"fantasy"}}>
-                      Balance : <td>{table.balance}</td>
-                        
-                    </tr>
-                    
-            )
-        }
-        <br></br><tr style={{fontSize:"20px", fontFamily:"fantasy"}}><td><a href="/home" style={{alignContent:"center"}}>Back to Home</a></td></tr>
-    </tbody>
-    
-</table >
+                    <tbody>
+                        {
+                            table.map(
+                                table =>
+                                    <tr key={table.accountid} style={{ fontSize: "30px", fontFamily: "fantasy" }}>
+                                        Balance : <td>{table.balance}</td>
 
-</div>
-</>
+                                    </tr>
+
+                            )
+                        }
+                        <br></br><tr style={{ fontSize: "20px", fontFamily: "fantasy" }}><td><a href="/home" style={{ alignContent: "center" }}>Back to Home</a></td></tr>
+                    </tbody>
+
+                </table >
+
+            </div>
+        </>
     )
 }
 export default Successful

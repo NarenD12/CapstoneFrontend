@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Navbar from "./NavBar";
 function PastTransactions(){
     const [datas, setData]=useState([])
 
@@ -15,6 +16,7 @@ function PastTransactions(){
     };
     return(
         <div>
+            <Navbar/>
             <h1 class="my-6 text-4xl font-bold text-center leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
                  <span class="block w-full py-22 text-transparent  bg-clip-text leading-12 bg-gradient-to-r from-blue-600 to-green-400 lg:inline">Transactions</span> <span></span>
                     </h1>

@@ -194,8 +194,11 @@
 // export default MutualFunds;
 //import "./App.css";
 import React from "react";
+import Navbar from "./NavBar";
 function MutualFundPage(){
     return(
+        <>
+        <Navbar/>
 <section class="pt-2 bg-skyblue">
             <div class="px-12 mx-auto max-w-7xl">
                 <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
@@ -281,6 +284,7 @@ Compare the full thali or the meal with a Mutual Fund, whereas individual items 
                 </div><br></br>
             </div>
         </section>
+        </>
     )
 }
 export default MutualFundPage

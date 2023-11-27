@@ -2,7 +2,10 @@ import React from "react";
 import Navbar from "./NavBar";
 function About() {
   return (
+    <>
+    <Navbar/>
     <div class="flex flex-col justify-between max-w-xl px-4 mx-auto lg:pt-16 lg:flex-row md:px-8 lg:max-w-screen-xl">
+      
       <div class="pt-16 mb-16 lg:mb-0 lg:pt-32 lg:max-w-lg lg:pr-5">
         <div class="max-w-xl mb-6">
           {/* <div>
@@ -26,6 +29,7 @@ function About() {
         <img src="https://media.walletfactory.com/wp-content/uploads/2022/10/21160809/main-1-1536x1184.png.webp" alt="error" width="700" height="700" />
       </div>
     </div>
+    </>
   );
 }
 

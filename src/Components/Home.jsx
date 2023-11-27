@@ -1,14 +1,16 @@
 import MyChatbot from './MyChatbot';
 import images from "../images";
 import ImageSlider from "../ImageSlider";
+import Navbar from './NavBar';
 
 function Home() {
     return (
         <div>
+            <Navbar/>
             <section class="bg-skyblue">
                 <div class="container px-6 py-10 mx-auto">
                     <h1 class="mb-6 text-4xl font-bold text-center leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-                        <span class="block w-full py-22 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-blue-600 to-green-400 lg:inline">Infinite Pay</span> <span></span>
+                        <span class="block w-full py-22 text-transparent bg-clip-text leading-12 bg-gradient-to-t from-blue-600 to-green-400 lg:inline">Infinite Pay</span> <span></span>
                         <ImageSlider images={images} />
                     </h1>
                     

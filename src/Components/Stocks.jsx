@@ -1,7 +1,11 @@
 import React from "react";
+import Navbar from "./NavBar";
 function StockPage(){
     return(
+        <>
+        <Navbar/>
 <section class="pt-2 bg-skyblue">
+    
             <div class="px-12 mx-auto max-w-7xl">
                 <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
                     <h1 class="my-6 text-4xl font-bold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
@@ -63,6 +67,7 @@ In these cases, stock is issued with the intent to realize gains on investments.
 
             </div>
         </section>
+        </>
     )
 }
 export default StockPage

@@ -3,6 +3,7 @@ import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
 import "./Card.css";
 import { useNavigate } from "react-router-dom";
+import Navbar from "./NavBar";
 
 function CardDetails() {
   const [number, setNumber] = useState("");
@@ -68,6 +69,7 @@ function CardDetails() {
 
   return (
     <div className="">
+      <Navbar/>
       <Cards
         number={number}
         name={name}

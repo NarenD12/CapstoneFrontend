@@ -19,7 +19,7 @@ import Successful from "./Components/Successful";
 function App() {
   return (
     <div style={{backgroundColor:"#cfe3ea"}}>
-        <Navbar/>
+        {/* <Navbar/> */}
             <Routes>
               <Route path="/home" element= { <Home/>} />
               <Route path="/register" element= { <Register/>} />

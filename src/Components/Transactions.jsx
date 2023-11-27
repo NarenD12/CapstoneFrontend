@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Navbar from "./NavBar";
 function Transactions() {
     const [typeofTrans, settypeofTrans] = useState("");
     const [amount, setamount] = useState("");
@@ -30,6 +31,7 @@ function Transactions() {
     }
     return (
         <div>
+            <Navbar/>
             <div class="container">
                 <div class="row">
                     <h2>Deposit or Withdraw</h2>
